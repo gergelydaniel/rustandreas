@@ -156,12 +156,14 @@ fn find_matches(start_char: char, chars: &Vec<char>, cheats: &BTreeMap<u32, Stri
         let hash = crc32(&table, &current_with_first);
 
         if let Some(name) = cheats.get(&hash) {
-            println!("Found one: \"{0}\" for \"{1}\"", current_with_first, name);
+            let reversed: String = current_with_first.chars().rev().collect();
+
+            println!("Found one: \"{0}\" for \"{1}\"", reversed, name);
 
             matches.push(
                 CheatMatch {
                     hash,
-                    value: current_with_first.clone()
+                    value: reversed
                 }
             )
         }
@@ -173,17 +175,10 @@ fn find_matches(start_char: char, chars: &Vec<char>, cheats: &BTreeMap<u32, Stri
 }
 
 fn main() {
-    println!("Hello, world!");
-
     let br = BufReader::new(File::open("cheats.json").unwrap());
-
     let cheats = parse_cheats(br).unwrap();
-    for hash in cheats.keys() {
-        println!("Cheat: name: {0}, hash: {1}", cheats[hash], hash);
-    }
 
     let chars = vec!['W', 'A', 'S', 'D'];
-
 
     let results: Vec<Vec<CheatMatch>> =
         chars
