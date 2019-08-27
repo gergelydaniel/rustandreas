@@ -10,3 +10,5 @@ might accidentally activate a cheat, for example, "WWDWASWWDWAS" is the same as 
 
 This project is supposed to find all the WASD cheat codes.
 It runs paralelly on 4 threads.
+
+Use `cargo run` to run the project.
