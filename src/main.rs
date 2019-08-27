@@ -2,7 +2,7 @@ use std::fs::File;
 use std::io::{BufReader, Read};
 use serde_json::{Value, Map};
 use std::collections::BTreeMap;
-use rayon::prelude::IntoParallelRefIterator;
+use rayon::prelude::*;
 
 struct Cheat {
     name: String,
@@ -97,9 +97,80 @@ fn crc32(crc32_table: &[u32; 256], buf: &str) -> u32 {
     })
 }
 
-//fn find_matches(start_char: char, cheats: BTreeMap<u32, String>) -> Vec<CheatMatch> {
-//
-//}
+fn is_last(string: &String, chars: &Vec<char>, max_len: usize) -> bool {
+    if string.len() < max_len {
+        return false
+    }
+
+    let last_char = chars.last().unwrap().clone();
+
+    string.chars().all(|c| c == last_char)
+}
+
+fn get_next(string: &String, chars: &Vec<char>) -> String {
+    let last_char = chars.last().unwrap().clone();
+    let first_char = chars.first().unwrap().clone();
+
+
+    if string.chars().all(|c| c == last_char) {
+        std::iter::repeat(first_char)
+            .take(string.len() + 1)
+            .collect()
+    } else {
+        let mut new: Vec<char> = string.chars().collect();
+        for i in (0..string.len()).rev() {
+            if new[i] == last_char {
+                new[i] = first_char
+            } else {
+                let n = chars.iter().position(|c| c.eq(&new[i])).unwrap();
+
+                new[i] = chars[n + 1];
+
+                return new.iter().collect()
+            }
+        }
+
+        new.iter().collect()
+    }
+}
+
+fn find_matches(start_char: char, chars: &Vec<char>, cheats: &BTreeMap<u32, String>) -> Vec<CheatMatch> {
+    let table = crc32_compute_table();
+
+    let first_char = chars.first().unwrap().clone();
+
+    let mut current = String::new();
+
+    //current.push(start_char);
+    for i in 0..(MIN_LENGTH - 1) {
+        current.push(first_char)
+    }
+
+    let mut matches = Vec::new();
+
+    while !is_last(&current, chars, MAX_LENGTH - 1) {
+        let mut current_with_first = String::new();
+        current_with_first.push(start_char);
+        current_with_first.push_str(current.as_str());
+
+        let hash = crc32(&table, &current_with_first);
+
+        if let Some(name) = cheats.get(&hash) {
+            println!("Found one: \"{0}\" for \"{1}\"", current_with_first, name);
+
+            matches.push(
+                CheatMatch {
+                    hash,
+                    value: current_with_first.clone()
+                }
+            )
+        }
+
+        current = get_next(&current, chars)
+    }
+
+    matches
+}
 
 fn main() {
     println!("Hello, world!");
@@ -111,15 +182,12 @@ fn main() {
         println!("Cheat: name: {0}, hash: {1}", cheats[hash], hash);
     }
 
-    let crc32_table = crc32_compute_table();
+    let chars = vec!['W', 'A', 'S', 'D'];
 
-    let test_str = "TOHNMADOOT";
-    let test_hash = crc32(&crc32_table, test_str);
-    println!("Hash of \"{0}\" is {1}", test_str, format!("{:#X}", test_hash));
 
-    //let results: Vec<Vec<CheatMatch>> =
-    //    CHARS
-    //        .par_iter()
-    //        .map(|c| find_matches(c, cheats))
-    //        .collect();
+    let results: Vec<Vec<CheatMatch>> =
+        chars
+            .par_iter()
+            .map(|c| find_matches(*c, &chars, &cheats))
+            .collect();
 }
