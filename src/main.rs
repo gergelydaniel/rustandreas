@@ -2,10 +2,16 @@ use std::fs::File;
 use std::io::{BufReader, Read};
 use serde_json::{Value, Map};
 use std::collections::BTreeMap;
+use rayon::prelude::IntoParallelRefIterator;
 
 struct Cheat {
     name: String,
     hash: u32,
+}
+
+struct CheatMatch {
+    hash: u32,
+    value: String,
 }
 
 fn parse_hash(value: &String) -> u32 {
@@ -67,6 +73,34 @@ fn read_file(filepath: &str) -> String {
 }
 
 
+static MIN_LENGTH: usize = 6;
+static MAX_LENGTH: usize = 29;
+
+fn crc32_compute_table() -> [u32; 256] {
+    let mut crc32_table = [0; 256];
+
+    for n in 0..256 {
+        crc32_table[n as usize] = (0..8).fold(n as u32, |acc, _| {
+            match acc & 1 {
+                1 => 0xedb88320 ^ (acc >> 1),
+                _ => acc >> 1,
+            }
+        });
+    }
+
+    crc32_table
+}
+
+fn crc32(crc32_table: &[u32; 256], buf: &str) -> u32 {
+    buf.bytes().fold(!0, |acc, octet| {
+        (acc >> 8) ^ crc32_table[((acc & 0xff) ^ octet as u32) as usize]
+    })
+}
+
+//fn find_matches(start_char: char, cheats: BTreeMap<u32, String>) -> Vec<CheatMatch> {
+//
+//}
+
 fn main() {
     println!("Hello, world!");
 
@@ -76,4 +110,16 @@ fn main() {
     for hash in cheats.keys() {
         println!("Cheat: name: {0}, hash: {1}", cheats[hash], hash);
     }
+
+    let crc32_table = crc32_compute_table();
+
+    let test_str = "TOHNMADOOT";
+    let test_hash = crc32(&crc32_table, test_str);
+    println!("Hash of \"{0}\" is {1}", test_str, format!("{:#X}", test_hash));
+
+    //let results: Vec<Vec<CheatMatch>> =
+    //    CHARS
+    //        .par_iter()
+    //        .map(|c| find_matches(c, cheats))
+    //        .collect();
 }
