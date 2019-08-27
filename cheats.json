@@ -1,0 +1,350 @@
+[
+  {
+    "name": "Weapon Set 1",
+    "hash": "0xDE4B237D"
+  },
+  {
+    "name": "Weapon Set 2",
+    "hash": "0xB22A28D1"
+  },
+  {
+    "name": "Weapon Set 3",
+    "hash": "0x5A783FAE"
+  },
+  {
+    "name": "Health, Armor, $250k",
+    "hash": "0xEECCEA2B"
+  },
+  {
+    "name": "Wanted level 2 stars",
+    "hash": "0x42AF1E28"
+  },
+  {
+    "name": "Clear wanted level",
+    "hash": "0x555FC201"
+  },
+  {
+    "name": "Sunny weather",
+    "hash": "0x2A845345"
+  },
+  {
+    "name": "Very sunny weather",
+    "hash": "0xE1EF01EA"
+  },
+  {
+    "name": "Overcast weather",
+    "hash": "0x771B83FC"
+  },
+  {
+    "name": "Rainy weather",
+    "hash": "0x5BF12848"
+  },
+  {
+    "name": "Foggy weather",
+    "hash": "0x44453A17"
+  },
+  {
+    "name": "Faster clock",
+    "hash": "0xFCFF1D08"
+  },
+  {
+    "name": "Faster gameplay",
+    "hash": "0xB69E8532"
+  },
+  {
+    "name": "Slower gameplay",
+    "hash": "0x8B828076"
+  },
+  {
+    "name": "Peds attack other (+ get golf club)",
+    "hash": "0xDD6ED9E9"
+  },
+  {
+    "name": "Have a bounty on your head",
+    "hash": "0xA290FD8C"
+  },
+  {
+    "name": "Everyone armed",
+    "hash": "0x3484B5A7"
+  },
+  {
+    "name": "Spawn Rhino",
+    "hash": "0x43DB914E"
+  },
+  {
+    "name": "Spawn Bloodring Banger",
+    "hash": "0xDBC0DD65"
+  },
+  {
+    "name": "Spawn Hotring A",
+    "hash": "0xD08A30FE"
+  },
+  {
+    "name": "Spawn Hotring B",
+    "hash": "0x37BF1B4E"
+  },
+  {
+    "name": "Spawn Romero",
+    "hash": "0xB5D40866"
+  },
+  {
+    "name": "Spawn Stretch",
+    "hash": "0xE63B0D99"
+  },
+  {
+    "name": "Spawn Trashmaster",
+    "hash": "0x675B8945"
+  },
+  {
+    "name": "Spawn Caddy",
+    "hash": "0x4987D5EE"
+  },
+  {
+    "name": "Blow up all cars",
+    "hash": "0x2E8F84E8"
+  },
+  {
+    "name": "Invisible cars",
+    "hash": "0x1A9AA3D6"
+  },
+  {
+    "name": "Insane handling",
+    "hash": "0xE842F3BC"
+  },
+  {
+    "name": "Suicide",
+    "hash": "0x0D5C6A4E"
+  },
+  {
+    "name": "All green lights",
+    "hash": "0x74D4FCB1"
+  },
+  {
+    "name": "Aggressive drivers",
+    "hash": "0xB01D13B8"
+  },
+  {
+    "name": "Pink traffic",
+    "hash": "0x66516EBC"
+  },
+  {
+    "name": "Black traffic",
+    "hash": "0x4B137E45"
+  },
+  {
+    "name": "Boats fly",
+    "hash": "0x78520E33"
+  },
+  {
+    "name": "Fat player",
+    "hash": "0x3A577325"
+  },
+  {
+    "name": "Max muscle",
+    "hash": "0xD4966D59"
+  },
+  {
+    "name": "Skinny player",
+    "hash": "0x5FD1B49D"
+  },
+  {
+    "name": "Elvis is everywhere",
+    "hash": "0xA7613F99"
+  },
+  {
+    "name": "Peds attack you with rockets",
+    "hash": "0x1792D871"
+  },
+  {
+    "name": "Beach party",
+    "hash": "0xCBC579DF"
+  },
+  {
+    "name": "Gang members everywhere",
+    "hash": "0x4FEDCCFF"
+  },
+  {
+    "name": "Gangs controls the streets",
+    "hash": "0x44B34866"
+  },
+  {
+    "name": "Ninja theme",
+    "hash": "0x2EF877DB"
+  },
+  {
+    "name": "Slut magnet",
+    "hash": "0x2781E797"
+  },
+  {
+    "name": "Cheap cars",
+    "hash": "0x2BC1A045"
+  },
+  {
+    "name": "Expensive cars",
+    "hash": "0xB2AFE368"
+  },
+  {
+    "name": "Cars fly",
+    "hash": "0xFA8DD45B"
+  },
+  {
+    "name": "Huge bunny hop",
+    "hash": "0x8DED75BD"
+  },
+  {
+    "name": "Spawn Hydra",
+    "hash": "0x1A5526BC"
+  },
+  {
+    "name": "Spawn Vortex",
+    "hash": "0xA48A770B"
+  },
+  {
+    "name": "Smash n' boom",
+    "hash": "0xB07D3B32"
+  },
+  {
+    "name": "All cars have nitro",
+    "hash": "0x80C1E54B"
+  },
+  {
+    "name": "Cars float away when hit",
+    "hash": "0x5DAD0087"
+  },
+  {
+    "name": "Always midnight",
+    "hash": "0x7F80B950"
+  },
+  {
+    "name": "Stop game clock orange sky",
+    "hash": "0x6C0FA650"
+  },
+  {
+    "name": "Thunder storm",
+    "hash": "0xF46F2FA4"
+  },
+  {
+    "name": "Sand storm",
+    "hash": "0x70164385"
+  },
+  {
+    "name": "Mega jump",
+    "hash": "0x885D0B50"
+  },
+  {
+    "name": "Infinite health",
+    "hash": "0x151BDCB3"
+  },
+  {
+    "name": "Infinite oxygen",
+    "hash": "0xADFA640A"
+  },
+  {
+    "name": "Get parachute",
+    "hash": "0xE57F96CE"
+  },
+  {
+    "name": "Get jetpack",
+    "hash": "0x040CF761"
+  },
+  {
+    "name": "Never wanted",
+    "hash": "0xE1B33EB9"
+  },
+  {
+    "name": "Six wanted stars",
+    "hash": "0xFEDA77F7"
+  },
+  {
+    "name": "Mega punch",
+    "hash": "0x8CA870DD"
+  },
+  {
+    "name": "Never get hungry",
+    "hash": "0x9A629401"
+  },
+  {
+    "name": "Riot mode",
+    "hash": "0xF53EF5A5"
+  },
+  {
+    "name": "Funhouse theme",
+    "hash": "0xF2AA0C1D"
+  },
+  {
+    "name": "Adrenaline mode",
+    "hash": "0xF36345A8"
+  },
+  {
+    "name": "Infinite ammo",
+    "hash": "0x8990D5E1"
+  },
+  {
+    "name": "Weapon aiming while driving",
+    "hash": "0xB7013B1B"
+  },
+  {
+    "name": "Reduced traffic",
+    "hash": "0xCAEC94EE"
+  },
+  {
+    "name": "Country traffic",
+    "hash": "0x31F0C3CC"
+  },
+  {
+    "name": "Recruit anyone (9mm)",
+    "hash": "0xB3B3E72A"
+  },
+  {
+    "name": "Recruit anyone (AK-47)",
+    "hash": "0xC25CDBFF"
+  },
+  {
+    "name": "Recruit anyone (rockets)",
+    "hash": "0xD5CF4EFF"
+  },
+  {
+    "name": "Lock respect at max",
+    "hash": "0x680416B1"
+  },
+  {
+    "name": "Lock sex appeal at max",
+    "hash": "0xCF5FDA18"
+  },
+  {
+    "name": "Max stamina",
+    "hash": "0xF01286E9"
+  },
+  {
+    "name": "Hitman level for all weapons",
+    "hash": "0xA841CC0A"
+  },
+  {
+    "name": "Max driving skills",
+    "hash": "0x31EA09CF"
+  },
+  {
+    "name": "Spawn Hunter",
+    "hash": "0xE958788A"
+  },
+  {
+    "name": "Spawn Quad",
+    "hash": "0x02C83A7C"
+  },
+  {
+    "name": "Spawn Tanker Truck",
+    "hash": "0xE49C3ED4"
+  },
+  {
+    "name": "Spawn Dozer",
+    "hash": "0x171BA8CC"
+  },
+  {
+    "name": "Spawn Stunt Plane",
+    "hash": "0x86988DAE"
+  },
+  {
+    "name": "Spawn Monster",
+    "hash": "0x2BDD2FA1"
+  }
+]
