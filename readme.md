@@ -11,29 +11,45 @@ might accidentally activate a cheat, for example, "WWDWASWWDWAS" is the same as 
 (Source of the cheats: https://gtagmodding.com/sanandreas/cheats/)
 
 This project is supposed to find all the WASD cheat codes.
-It runs paralelly on 4 threads.
+It runs paralelly on 4 threads. (however it's still nothing more than a draft) 
 
 Use `cargo run` to run the project.
 
 Some results:
 
-|Cheat code         |Effect                     |
-|-------------------|---------------------------|
-|WWDWASWWDWAS       |Overcast weather           |
-|WSDWSWSWDDSWWA     |Cars float away when hit   |
-|DWASAWSWSWASWD     |Rainy weather              |
-|WASWSWASWWWWAA     |Spawn Romero               |
-|ASDDAWADSASSAA     |Reduced traffic            |
-|DDDSADWAWWWDAD     |All cars have nitro        |
-|WWAASWAASSWDAS     |Clear wanted level         |
-|AAAADADSAWADAW     |Spawn Quad                 |
-|AWDAAWSWDSSSSA     |Spawn Vortex               |
-|ADDAAWSSWSADSA     |Weapon Set 3               |
-|SWDWDSSSSSDWAWD    |Spawn Romero               |
-|WDWDWAWSSSADAWA    |Spawn Monster              |
-|WSDWDWASWADWDWW    |Slower gameplay            |
-|SWDSWDSAWSWDDWD    |Max driving skills         |
-|DASDAWAAWSSWWAW    |Spawn Hunter               |
-|SSWWDSSDASADWAW    |Health, Armor, $250k       |
-|WAWSWWADDAWWAAA    |All green lights           |
-|DWSWWASDASSWAAW    |Six wanted stars           |
+|Cheat code         |Effect                         |
+|-------------------|-------------------------------|
+|WWDWASWWDWAS       |Overcast weather               |
+|WSDWSWSWDDSWWA     |Cars float away when hit       |
+|DWASAWSWSWASWD     |Rainy weather                  |
+|WASWSWASWWWWAA     |Spawn Romero                   |
+|ASDDAWADSASSAA     |Reduced traffic                |
+|DDDSADWAWWWDAD     |All cars have nitro            |
+|WWAASWAASSWDAS     |Clear wanted level             |
+|AAAADADSAWADAW     |Spawn Quad                     |
+|AWDAAWSWDSSSSA     |Spawn Vortex                   |
+|ADDAAWSSWSADSA     |Weapon Set 3                   |
+|SWDWDSSSSSDWAWD    |Spawn Romero                   |
+|WDWDWAWSSSADAWA    |Spawn Monster                  |
+|WSDWDWASWADWDWW    |Slower gameplay                |
+|SWDSWDSAWSWDDWD    |Max driving skills             |
+|DASDAWAAWSSWWAW    |Spawn Hunter                   |
+|SSWWDSSDASADWAW    |Health, Armor, $250k           |
+|WAWSWWADDAWWAAA    |All green lights               |
+|DWSWWASDASSWAAW    |Six wanted stars               |
+|DDDDASDDDWAWWSW    |Very sunny weather             |
+|ADDWSADSWSDWWSD    |Spawn Caddy                    |
+|AADWSSDSWDDDSSS    |Spawn Bloodring Banger         |
+|ASDSSSWSDSAADSA    |Spawn Stretch                  |
+|ADADWDAASWWSWDD    |Elvis is everywhere            |
+|DDSSDSWSAWDSWDA    |All cars have nitro            |
+|SWWSWADWWWWDADS    |Faster gameplay                |
+|ADWADDADASDASDW    |Ninja theme                    |
+|SASWWWWADDAWDDW    |Insane handling                |
+|WDADASAAAWDSAWWD   |Huge bunny hop                 |
+|DSAAWDSSSDDADWWD   |Weapon aiming while driving    |
+|SSWWDWAADSASDWWS   |Expensive cars                 |
+|SDAWWWWWSDSDDWWS   |Spawn Romero                   |
+|WADDWWWSDWWWAAWS   |Spawn Rhino                    |
+|WADDSWDSAWDWDAWS   |All cars have nitro            |
+|DASWSSSWDWAADAWW   |Health, Armor, $250k           |
